@@ -9,5 +9,5 @@ RUN apt-get install apache2 -y
 #copy the code from local to inside the docker image
 COPY . /var/www/html
 #start Apache start server
-ENTRYPOINT apachectl-D FOREGROUND
-clear
+ENTRYPOINT apachectl -D FOREGROUND
+
